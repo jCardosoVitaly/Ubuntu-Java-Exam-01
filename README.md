@@ -15,57 +15,62 @@ cd demo
 
 ## 📝 Exercises
 
-### Exercise 1: 4 Pillars of OOP
-Demonstrate **Encapsulation** and **Abstraction** with a vehicle system (Vehicle → Car).
+### Section 1: Theoretical Questions
+
+#### Exercise 1: JVM, JRE, JDK and Primitive vs Reference Types
+Briefly explain what the JVM, JRE, and JDK are. Then, explain the fundamental difference in how Java stores Primitive Types (e.g., int) and Reference Types (e.g., String) in memory.
 
 ---
 
-### Exercise 2: JVM, JRE, and JDK
-Explain briefly what JVM, JRE, and JDK are and how Java code executes.
+#### Exercise 2: Encapsulation, Abstraction, and Interfaces
+Explain the two Object-Oriented Programming (OOP) pillars of Encapsulation and Abstraction. Then, define what a Java Interface is and what its primary function is in system design.
 
 ---
 
-### Exercise 3: Primitive vs Reference Types
-Show the difference between primitive types (stored in Stack) and reference types (stored in Heap).
+#### Exercise 3: Exception Handling and Control Flow Statements
+Describe the purpose of a try-catch-finally block in exception handling. Additionally, mention and give an example of two different types of Control Flow Statements used for making decisions or repeating code (e.g., if, for).
 
 ---
 
-### Exercise 4: Methods and Constructors Overloading
-Create a Product class with **constructor overloading** (3 different constructors).
+#### Exercise 4: HashMap Internals and Synchronization
+Describe what happens internally in a HashMap when a new key-value is inserted. In the context of Multithreading, explain why Synchronization (synchronized) is necessary when working with shared resources.
 
 ---
 
-### Exercise 5: Memory Management
-Implement **method overloading** using the Product class with different add() methods.
+#### Exercise 5: Record Classes and Thread Pools
+Describe the main goal of Record Classes in Java. In the realm of Thread Pools, explain the advantage of using a FixedThreadPool instead of creating a new Thread for every single task.
 
 ---
 
-### Exercise 6: Abstract Classes and Enums
-Create examples of:
-- Abstract class (Payment system)
-- Enum (PaymentStatus with methods)
+### Section 2: Practical Exercises
+
+#### Exercise 6: Task Class
+Create a class named Task with the following attributes: int id, String description, and boolean isCompleted. The class must have Getters and Setters methods, an Empty Constructor, and a Constructor with all attributes.
 
 ---
 
-### Exercise 7: Lambda Expressions
-Use lambda expressions with a functional interface (StringProcessor) to:
-- Convert text to uppercase
-- Reverse strings
+#### Exercise 7: Create Task Instances
+Using the Task class from Exercise 6, create three instances with the following data, and then print the values of all attributes for each instance:
+- taskA: id=1, description="Implement Login", isCompleted=false
+- taskB: id=2, description="Fix Bug", isCompleted=true
+- taskC: id=3, description="Refactor Code", isCompleted=false
 
 ---
 
-### Exercise 8: Collections Framework
-Use ArrayList, HashSet, HashMap, and Streams API to manage and process data.
+#### Exercise 8: ArrayList of Tasks
+Create an ArrayList to store Task objects (from Exercise 6). Add the three objects created in Exercise 7 to this list. Print the entire list to the console.
 
 ---
 
-### Exercise 9: Exception Handling
-Demonstrate try-catch-finally and create a custom exception class.
+#### Exercise 9: Streams API with Tasks
+Use the list of Task from Exercise 8 and the Streams API to perform the following actions:
+- Filtering: Print only the tasks where the isCompleted attribute is false
+- Counting: Print the total number of tasks in the list
 
 ---
 
-### Exercise 10: Multithreading
-Create threads using Runnable and demonstrate synchronization with a shared counter.
+#### Exercise 10: ExecutorService with FixedThreadPool
+Implement a program to demonstrate thread execution using an ExecutorService. Create a class that implements the Runnable interface and prints the current thread's name. In the main method, use an ExecutorService with a FixedThreadPool (size 2) to execute 4 instances of your Runnable class. Be sure to call shutdown() to properly terminate the ExecutorService.
 
 ---
 
@@ -73,16 +78,16 @@ Create threads using Runnable and demonstrate synchronization with a shared coun
 
 ```
 demo/src/main/java/com/ununtu/demo/exercises/
-├── Exercise1.java   (4 Pillars of OOP)
-├── Exercise2.java   (JVM, JRE, JDK)
-├── Exercise3.java   (Primitive vs Reference)
-├── Exercise4.java   (Constructor Overloading)
-├── Exercise5.java   (Method Overloading)
-├── Exercise6.java   (Abstract Classes & Enums)
-├── Exercise7.java   (Lambda Expressions)
-├── Exercise8.java   (Collections Framework)
-├── Exercise9.java   (Exception Handling)
-└── Exercise10.java  (Multithreading)
+├── Exercise1.java   (JVM, JRE, JDK & Primitive vs Reference Types)
+├── Exercise2.java   (Encapsulation, Abstraction & Interfaces)
+├── Exercise3.java   (Exception Handling & Control Flow)
+├── Exercise4.java   (HashMap Internals & Synchronization)
+├── Exercise5.java   (Record Classes & Thread Pools)
+├── Exercise6.java   (Task Class)
+├── Exercise7.java   (Create Task Instances)
+├── Exercise8.java   (ArrayList of Tasks)
+├── Exercise9.java   (Streams API with Tasks)
+└── Exercise10.java  (ExecutorService with FixedThreadPool)
 ```
 
 ## 🎯 For Students
@@ -95,18 +100,18 @@ demo/src/main/java/com/ununtu/demo/exercises/
 
 ## 📊 Topics Covered
 
-| Exercise | Topic | Key Concepts |
-|----------|-------|--------------|
-| 1 | 4 Pillars of OOP | Encapsulation, Inheritance, Polymorphism, Abstraction |
-| 2 | Java Platform | JVM, JRE, JDK |
-| 3 | Data Types | Primitives vs References, Stack vs Heap |
-| 4 | Constructor Overloading | Multiple constructors with different parameters |
-| 5 | Method Overloading | Same method name, different parameters |
-| 6 | Special Classes | Abstract classes, Enums |
-| 7 | Lambda Expressions | Functional interfaces, Lambda syntax |
-| 8 | Collections | ArrayList, HashSet, HashMap, Streams API |
-| 9 | Exceptions | try-catch-finally, Custom exceptions |
-| 10 | Concurrency | Threads, Synchronization |
+| Exercise | Section | Topic | Key Concepts |
+|----------|---------|-------|--------------|
+| 1 | 1 | Java Platform & Memory | JVM, JRE, JDK, Primitive vs Reference Types |
+| 2 | 1 | OOP Fundamentals | Encapsulation, Abstraction, Interfaces |
+| 3 | 1 | Exception Handling & Control Flow | try-catch-finally, Control Flow Statements |
+| 4 | 1 | Collections & Multithreading | HashMap internals, Synchronization |
+| 5 | 1 | Modern Java Features | Record Classes, Thread Pools |
+| 6 | 2 | Classes & Constructors | Class creation, Getters/Setters, Constructors |
+| 7 | 2 | Object Instantiation | Creating objects, Printing attributes |
+| 8 | 2 | Collections Framework | ArrayList, Adding objects |
+| 9 | 2 | Streams API | Filtering, Counting |
+| 10 | 2 | Concurrency | ExecutorService, FixedThreadPool, Runnable |
 
 ## 🛠️ Technologies
 

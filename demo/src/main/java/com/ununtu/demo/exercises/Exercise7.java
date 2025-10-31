@@ -1,41 +1,23 @@
 package com.ununtu.demo.exercises;
 
 /**
- * Exercise 7: Lambda Expressions
+ * Exercise 7: Section 2 - Exercise 7
  * 
- * OBJECTIVE: Master lambda expressions with functional interfaces
+ * Using the Task class from Exercise 6, create three instances with 
+ * the following data, and then print the values of all attributes for each instance:
  * 
- * DETAILED INSTRUCTIONS:
- * 
- * 1. Use the StringProcessor functional interface (already created below)
- * 
- * 2. Create lambda expressions to implement different string operations:
- *    - Convert to uppercase
- *    - Reverse the string using reverse().toString();
- *
- * EXPECTED OUTPUT EXAMPLE:
- * === LAMBDA EXPRESSIONS ===
- * Original text: hello world
- * 
- * Uppercase: HELLO WORLD
- * Reversed: dlrow olleh
+ * - taskA: id=1, description="Implement Login", isCompleted=false
+ * - taskB: id=2, description="Fix Bug", isCompleted=true
+ * - taskC: id=3, description="Refactor Code", isCompleted=false
  */
 public class Exercise7 {
 
     public static void run() {
-        System.out.println("\n=== EXERCISE 7: Lambda Expressions ===\n");
+        System.out.println("\n=== EXERCISE 7: Create Task Instances ===\n");
         
-        // TODO: STEP 1 - Create lambda to convert to uppercase
-
-        // TODO: STEP 2 - Create lambda to reverse string
-
+        // TODO: Create three Task instances and print their attributes
         
         System.out.println("\n⚠️ Exercise not implemented yet!");
     }
 
-    // Functional interface (already created for you)
-    @FunctionalInterface
-    interface StringProcessor {
-        String process(String input);
-    }
 }

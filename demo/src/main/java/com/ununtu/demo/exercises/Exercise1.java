@@ -1,41 +1,31 @@
 package com.ununtu.demo.exercises;
 
 /**
- * Exercise 1: 4 Pillars of OOP
+ * Exercise 1: Section 1 - Question 1
  * 
- * OBJECTIVE: Create a vehicle system that demonstrates the 4 pillars of OOP
- * 
- * DETAILED INSTRUCTIONS:
- * 
- * 1. ABSTRACTION: Create an abstract class Vehicle with:
- *    - Abstract method: void start()
- *    - Abstract method: void stop()
- * 
- * 2. ENCAPSULATION: Create the Car class that extends Vehicle with:
- *    - PRIVATE attribute: String brand
- *    - PRIVATE attribute: int speed
- *    - Constructor that initializes brand
- *    - Public Getters and Setters to access private attributes
- *    - Implement the abstract methods start() and stop()
- *
- * EXPECTED OUTPUT EXAMPLE:
- * Toyota car is starting...
- * Current speed: 0 km/h
- * Accelerating to 60 km/h
- * Toyota car stopped.
+ * Briefly explain what the JVM, JRE, and JDK are. 
+ * Then, explain the fundamental difference in how Java stores Primitive Types 
+ * (e.g., int) and Reference Types (e.g., String) in memory.
  */
 public class Exercise1 {
 
     public static void run() {
-        System.out.println("\n=== EXERCISE 1: 4 Pillars of OOP ===\n");
+        System.out.println("\n=== EXERCISE 1: JVM, JRE, JDK and Primitive vs Reference Types ===\n");
         
-        // TODO: STEP 1 - Create a regular car
+        // TODO: Explain JVM, JRE, and JDK
+        System.out.println("📚 JVM, JRE, and JDK:");
+        System.out.println("JVM (Java Virtual Machine): [Your explanation here]");
+        System.out.println("JRE (Java Runtime Environment): [Your explanation here]");
+        System.out.println("JDK (Java Development Kit): [Your explanation here]");
+        System.out.println();
         
-        System.out.println("⚠️ Exercise not implemented yet!");
+        // TODO: Explain Primitive vs Reference Types in memory
+        System.out.println("💾 Primitive Types vs Reference Types in Memory:");
+        System.out.println();
+        
+        // TODO: Show examples and explain the difference
+        
+        System.out.println("\n⚠️ Exercise not implemented yet!");
     }
-
-    // TODO: STEP 1 - Create abstract class Vehicle (ABSTRACTION)
-
-    // TODO: STEP 2 - Create Car class extending Vehicle (ENCAPSULATION + INHERITANCE)
 
 }

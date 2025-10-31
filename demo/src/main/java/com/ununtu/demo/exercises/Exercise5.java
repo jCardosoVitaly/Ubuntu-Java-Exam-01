@@ -1,36 +1,28 @@
 package com.ununtu.demo.exercises;
 
 /**
- * Exercise 5: Overloading methods
+ * Exercise 5: Section 1 - Question 5
  *
- * DETAILED INSTRUCTIONS:
- *
- * 1. Using the Product class created in exercise 4, implement a METHOD OVERLOADING:
- *    Add a method called add() with the following overloads:
- *    - add(String name)
- *    - add(String name, double price)
- *    - add(String name, double price, int stock)
- *
- * 2. DEMONSTRATE USAGE:
- *    - Create Product objects using each constructor
- *    - Call each version of the add() method *
+ * Describe the main goal of Record Classes in Java. In the realm of 
+ * Thread Pools, explain the advantage of using a FixedThreadPool instead of 
+ * creating a new Thread for every single task.
  */
 public class Exercise5 {
 
     public static void run() {
-        System.out.println("\n=== EXERCISE 5: Overloading methods ===\n");
+        System.out.println("\n=== EXERCISE 5: Record Classes and Thread Pools ===\n");
 
+        // TODO: Explain Record Classes
+        System.out.println("📋 Record Classes in Java:");
+        System.out.println("Main goal: [Your explanation here]");
         System.out.println();
         
-        // TODO: STEP 1 - Create add methods
-        System.out.println();
-        
-        // TODO: STEP 2 - Demonstrate using the Product class with its new methods
-        System.out.println();
+        // TODO: Explain FixedThreadPool advantages
+        System.out.println("🧵 Thread Pools (FixedThreadPool):");
+        System.out.println("Advantage over creating new Thread for each task:");
+        System.out.println("[Your explanation here]");
         
         System.out.println("\n⚠️ Exercise not implemented yet!");
     }
-
-    // TODO: Use Product class previously created
 
 }

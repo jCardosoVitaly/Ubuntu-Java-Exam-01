@@ -1,32 +1,31 @@
 package com.ununtu.demo.exercises;
 
 /**
- * Exercise 2: JVM, JRE, and JDK
+ * Exercise 2: Section 1 - Question 2
  * 
- * OBJECTIVE: Explain briefly Java architecture and the compilation/execution process
- *
- * Complete the explanations in your own words:
- * 
- * 1. JVM (Java Virtual Machine):
- * 2. JRE (Java Runtime Environment):
- * 3. JDK (Java Development Kit):
- *
+ * Explain the two Object-Oriented Programming (OOP) pillars of 
+ * Encapsulation and Abstraction. Then, define what a Java Interface is and 
+ * what its primary function is in system design.
  */
 public class Exercise2 {
 
     public static void run() {
-        System.out.println("\n=== EXERCISE 2: JVM, JRE, and JDK ===\n");
+        System.out.println("\n=== EXERCISE 2: Encapsulation, Abstraction, and Interfaces ===\n");
         
-        // TODO: Complete the explanations by replacing [Your explanation here]
-        
-        System.out.println("📚 JVM (Java Virtual Machine):");
+        // TODO: Explain Encapsulation
+        System.out.println("🔒 Encapsulation:");
         System.out.println("[Your explanation here]");
+        System.out.println();
         
-        System.out.println("📦 JRE (Java Runtime Environment):");
+        // TODO: Explain Abstraction
+        System.out.println("🎭 Abstraction:");
         System.out.println("[Your explanation here]");
+        System.out.println();
         
-        System.out.println("🛠️ JDK (Java Development Kit):");
-        System.out.println("[Your explanation here]");
+        // TODO: Define Java Interface
+        System.out.println("📋 Java Interface:");
+        System.out.println("Definition: [Your explanation here]");
+        System.out.println("Primary function in system design: [Your explanation here]");
 
         System.out.println("\n⚠️ Exercise not implemented yet!");
     }

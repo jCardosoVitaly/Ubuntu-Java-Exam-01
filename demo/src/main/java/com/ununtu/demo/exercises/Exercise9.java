@@ -1,49 +1,31 @@
 package com.ununtu.demo.exercises;
 
+import java.util.*;
+import java.util.stream.*;
+
 /**
- * Exercise 9: Exception Handling
+ * Exercise 9: Section 2 - Exercise 9
  * 
- * OBJECTIVE: Master exception handling in Java
+ * Use the list of Task from Exercise 8 and the Streams API to perform 
+ * the following actions:
  * 
- * DETAILED INSTRUCTIONS:
- * 
- * 1. TRY-CATCH-FINALLY:
- *    - try: Code that might throw an exception
- *    - catch: Handle the exception
- *    - finally: Always executes (cleanup code)
- *
- * 2. CUSTOM EXCEPTION:
- *    Using the InvalidAgeException  exception class cointained in the validateAge method:
- *    - Throw and catch it and show the message error on console
+ * 1. Filtering: Print only the tasks where the isCompleted attribute is false
+ * 2. Counting: Print the total number of tasks in the list
  */
 public class Exercise9 {
 
     public static void run() {
-        System.out.println("\n=== EXERCISE 9: Exception Handling ===\n");
+        System.out.println("\n=== EXERCISE 9: Streams API with Tasks ===\n");
         
-        // TODO: STEP 1 - Basic try-catch-finally
-        System.out.println("⚠️ TRY-CATCH-FINALLY:");
-
+        // TODO: Filter tasks where isCompleted is false
+        System.out.println("🔍 Filtering - Tasks not completed:");
+        
         System.out.println();
-
-        // TODO: STEP 2 - Custom exception
-        System.out.println("🎯 CUSTOM EXCEPTION:");
-
-        System.out.println();
-
+        
+        // TODO: Count total number of tasks
+        System.out.println("📊 Counting - Total number of tasks:");
+        
         System.out.println("\n⚠️ Exercise not implemented yet!");
     }
 
-    // Custom exception
-    static class InvalidAgeException extends Exception {
-         InvalidAgeException(String message) {
-             super(message);
-         }
-     }
-    
-     static void validateAge(int age) throws InvalidAgeException {
-         if (age < 18) {
-             throw new InvalidAgeException("Must be 18+");
-         }
-     }
 }
