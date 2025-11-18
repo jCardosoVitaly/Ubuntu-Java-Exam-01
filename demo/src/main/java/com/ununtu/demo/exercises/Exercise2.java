@@ -1,32 +1,45 @@
 package com.ununtu.demo.exercises;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+import java.time.LocalDateTime;
+import java.util.HashMap;
+import java.util.Map;
+
 /**
- * Exercise 2: Section 1 - Question 2
- * 
- * Explain the two Object-Oriented Programming (OOP) pillars of 
- * Encapsulation and Abstraction. Then, define what a Java Interface is and 
- * what its primary function is in system design.
+ * ═══════════════════════════════════════════════════════════════════════════════
+ * EXERCISE 2: Exception Handling
+ * ═══════════════════════════════════════════════════════════════════════════════
+ * TASK: Handle ProductNotFoundException and return proper 404 JSON response
+ * TODO: Return with no found status
+ * ═══════════════════════════════════════════════════════════════════════════════
  */
 public class Exercise2 {
 
-    public static void run() {
-        System.out.println("\n=== EXERCISE 2: Encapsulation, Abstraction, and Interfaces ===\n");
-        
-        // TODO: Explain Encapsulation
-        System.out.println("🔒 Encapsulation:");
-        System.out.println("[Your explanation here]");
-        System.out.println();
-        
-        // TODO: Explain Abstraction
-        System.out.println("🎭 Abstraction:");
-        System.out.println("[Your explanation here]");
-        System.out.println();
-        
-        // TODO: Define Java Interface
-        System.out.println("📋 Java Interface:");
-        System.out.println("Definition: [Your explanation here]");
-        System.out.println("Primary function in system design: [Your explanation here]");
+    public static class ProductNotFoundException extends RuntimeException {
+        public ProductNotFoundException(Long id) {
+            super("Product not found with id: " + id);
+        }
+    }
 
-        System.out.println("\n⚠️ Exercise not implemented yet!");
+    @RestControllerAdvice
+    public static class GlobalExceptionHandler {
+
+        @ExceptionHandler(ProductNotFoundException.class)
+        public ResponseEntity<Map<String, Object>> handleProductNotFound(ProductNotFoundException ex) {
+            Map<String, Object> body = new HashMap<>();
+            body.put("timestamp", LocalDateTime.now());
+            body.put("status",    HttpStatus.NOT_FOUND.value());
+            body.put("error",     HttpStatus.NOT_FOUND.getReasonPhrase());
+            body.put("message",   ex.getMessage());
+
+            // TODO: Return ResponseEntity with body and NOT_FOUND status
+            return null;
+        }
+
+        // TODO: Add another @ExceptionHandler for IllegalArgumentException that returns BAD_REQUEST (400)
     }
 }

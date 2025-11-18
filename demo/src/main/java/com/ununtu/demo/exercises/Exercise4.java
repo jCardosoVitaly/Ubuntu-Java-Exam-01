@@ -1,29 +1,47 @@
 package com.ununtu.demo.exercises;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
 /**
- * Exercise 4: Section 1 - Question 4
+ * ═══════════════════════════════════════════════════════════════════════════════
+ * EXERCISE 4: Native Query
+ * ═══════════════════════════════════════════════════════════════════════════════
  * 
- * Describe what happens internally in a HashMap when a new key-value 
- * is inserted. In the context of Multithreading, explain why Synchronization 
- * (synchronized) is necessary when working with shared resources.
+ * TASK: Find products with price above a value using Native SQL
+ * 
+ * TODO: Create query to obtain a price higher than the imput parameter
+ * 
+ * ═══════════════════════════════════════════════════════════════════════════════
  */
 public class Exercise4 {
 
-    public static void run() {
-        System.out.println("\n=== EXERCISE 4: HashMap Internals and Synchronization ===\n");
-        
-        // TODO: Describe HashMap internals
-        System.out.println("🗂️ HashMap Internals:");
-        System.out.println("What happens when inserting a new key-value pair:");
-        System.out.println("[Your explanation here]");
-        System.out.println();
-        
-        // TODO: Explain Synchronization
-        System.out.println("🔒 Synchronization in Multithreading:");
-        System.out.println("Why synchronization is necessary with shared resources:");
-        System.out.println("[Your explanation here]");
+    @Entity
+    @Table(name = "products")
+    public static class Product {
+        @Id
+        private Long id;
+        private String name;
+        private Double price;
 
-        System.out.println("\n⚠️ Exercise not implemented yet!");
+        public Long getId() { return id; }
+        public String getName() { return name; }
+        public Double getPrice() { return price; }
+    }
 
-     }
+    @Repository
+    public interface ProductRepository extends JpaRepository<Product, Long> {
+
+        // TODO: Replace the comment with the query in order to obrain a price higher than the imput parameter
+        @Query(value = "/*TODO Create query to obtain a price higher than the imput parameter*/", nativeQuery = true)
+        // TODO: Add parameter Double minPrice with the proper annotation
+        List<Product> findExpensiveProducts(/*TODO Add parameter min price*/);
+    }
 }
