@@ -33,7 +33,7 @@ This exam consists of **5 practical exercises** covering advanced Spring Boot to
 
 **TODOs:**
 1. Add `fetch = FetchType.LAZY` and `@JoinColumn(name = "name of the bonding column")` to the `@ManyToOne` in Product class
-2. Add `@Query` annotation with JPQL: `"SELECT c FROM Category c LEFT JOIN FETCH c.products"` to `findAllWithProducts()` method
+2. Add `@Query` annotation with JPQL to `findAllWithProducts()` method
 
 **File:** `Exercise3.java`
 
@@ -44,7 +44,7 @@ This exam consists of **5 practical exercises** covering advanced Spring Boot to
 
 **TODOs:**
 1. Replace the comment with the query in order to obtain a price higher than the input parameter (Native SQL query)
-2. Add parameter `Double minPrice` with the proper annotation (`@Param`)
+2. Add parameter `Double minPrice` with the proper annotation 
 
 **File:** `Exercise4.java`
 
@@ -55,7 +55,7 @@ This exam consists of **5 practical exercises** covering advanced Spring Boot to
 
 **TODOs:**
 1. Encrypt the password using `passwordEncoder.encode()` in `createUser()` method
-2. Create a method to validate login: compare `plainPassword` with stored encrypted password using `passwordEncoder.matches()` in `validatePassword()` method
+2. Create a method to validate login: compare `plainPassword` with stored encrypted password using `passwordEncoder` in `validatePassword()` method
 3. The `SecurityConfig` class already has the `@Bean` for `BCryptPasswordEncoder` configured
 
 **File:** `Exercise5.java`
