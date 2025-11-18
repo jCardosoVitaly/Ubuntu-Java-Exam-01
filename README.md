@@ -2,29 +2,6 @@
 
 ## Ubuntu Project - Java 2025
 
-A practical Java exam covering advanced Spring Boot concepts including Interceptors, Exception Handling, JPA Relationships, Native Queries, and Spring Security.
-
-## 🚀 Quick Start
-
-### Prerequisites
-
-- Java 17 or higher
-- Gradle 8.14.3 or higher
-
-### Run the Application
-
-```powershell
-cd demo
-.\gradlew.bat bootRun
-```
-
-Or on Linux/Mac:
-
-```bash
-cd demo
-./gradlew bootRun
-```
-
 ## 📝 Exercises
 
 This exam consists of **5 practical exercises** covering advanced Spring Boot topics.
@@ -85,21 +62,6 @@ This exam consists of **5 practical exercises** covering advanced Spring Boot to
 
 ---
 
-## 📂 Project Structure
-
-```
-demo/
-├── src/main/java/com/ununtu/demo/
-│   ├── DemoApplication.java
-│   └── exercises/
-│       ├── Exercise1.java   (Custom Interceptors)
-│       ├── Exercise2.java   (Exception Handling)
-│       ├── Exercise3.java   (JPA Relationships - N+1 Problem)
-│       ├── Exercise4.java   (Native Query)
-│       └── Exercise5.java   (Spring Security - Password Encryption)
-├── build.gradle
-└── README.md
-```
 
 ## 🎯 Instructions for Students
 
@@ -114,75 +76,6 @@ demo/
 
 4. **Complete the TODO sections** marked in the code
 
-5. **Test your implementation** by running the application
-
-6. **Verify** that your code compiles without errors
-
-## 📊 Topics Covered
-
-| Exercise | Topic | Difficulty | Key Technologies |
-|----------|-------|------------|------------------|
-| 1 | Custom Interceptors | ⭐⭐ | Spring MVC, HandlerInterceptor |
-| 2 | Exception Handling | ⭐⭐ | @RestControllerAdvice, @ExceptionHandler |
-| 3 | JPA Relationships | ⭐⭐⭐ | JPA, JPQL, Lazy Loading, JOIN FETCH |
-| 4 | Native Query | ⭐⭐ | JPA, Native SQL, @Query |
-| 5 | Spring Security | ⭐⭐⭐ | BCrypt, PasswordEncoder, @Configuration |
-
-## 🛠️ Technologies & Dependencies
-
-- **Java 17**
-- **Spring Boot 3.5.6**
-  - spring-boot-starter-web
-  - spring-boot-starter-data-jpa
-  - spring-boot-starter-security
-  - spring-boot-starter-oauth2-client
-  - spring-boot-starter-cache
-- **Gradle 8.14.3**
-- **H2 Database** (in-memory)
-- **JWT** (io.jsonwebtoken:jjwt-api:0.11.5)
-- **Feign Client** (Spring Cloud OpenFeign)
-- **Hibernate JCache & EhCache**
-
-## 💡 Tips
-
-- Read all comments carefully before starting
-- Each exercise builds on Spring Boot concepts
-- Test your code incrementally
-- Use the provided structure - don't create new files
-- Pay attention to annotations and their parameters
-- Remember to handle null values appropriately
-
-## 📚 Learning Objectives
-
-By completing this exam, you will demonstrate understanding of:
-
-✅ Creating and configuring Spring Boot interceptors  
-✅ Implementing centralized exception handling  
-✅ Working with JPA relationships and avoiding N+1 queries  
-✅ Writing native SQL queries in Spring Data JPA  
-✅ Implementing secure password storage with BCrypt  
-✅ Configuring Spring Security beans  
-
-## 🔧 Troubleshooting
-
-### Gradle Build Issues
-```bash
-./gradlew clean build --refresh-dependencies
-```
-
-### IDE Not Recognizing Dependencies
-- Refresh Gradle project in your IDE
-- Invalidate caches and restart (IntelliJ IDEA)
-
-### Port Already in Use
-Change the port in `application.properties`:
-```properties
-server.port=8081
-```
-
-## 📄 License
-
-Educational material for Java 2025 course - Ubuntu Project.
 
 ---
 
