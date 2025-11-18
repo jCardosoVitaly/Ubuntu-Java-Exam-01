@@ -18,7 +18,7 @@ import java.util.List;
  * TASK: Find products with price above a value using Native SQL
  * 
  * TODO 1: Replace the comment with the query in order to obtain a price higher than the input parameter (Native SQL query)
- * TODO 2: Add parameter Double minPrice with the proper annotation (@Param)
+ * TODO 2: Add parameter Double minPrice with the proper annotation
  * 
  * ═══════════════════════════════════════════════════════════════════════════════
  */

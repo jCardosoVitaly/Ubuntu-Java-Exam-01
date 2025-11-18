@@ -19,9 +19,9 @@ import org.springframework.stereotype.Service;
  * 
  * TASK: Encrypt password before saving user
  * 
- * TODO 1: Encrypt the password using passwordEncoder.encode() in createUser() method
+ * TODO 1: Encrypt the password using passwordEncoder in createUser() method
  * TODO 2: Create a method to validate login: compare plainPassword with stored encrypted password 
- *         using passwordEncoder.matches() in validatePassword() method
+ *         using passwordEncoder in validatePassword() method
  * TODO 3: The SecurityConfig class already has the @Bean for BCryptPasswordEncoder configured
  * 
  * ═══════════════════════════════════════════════════════════════════════════════
