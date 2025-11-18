@@ -11,10 +11,14 @@ import java.util.Map;
 
 /**
  * ═══════════════════════════════════════════════════════════════════════════════
- * EXERCISE 2: Exception Handling
+ * EXERCISE 2
  * ═══════════════════════════════════════════════════════════════════════════════
+ * 
  * TASK: Handle ProductNotFoundException and return proper 404 JSON response
- * TODO: Return with no found status
+ * 
+ * TODO 1: Return ResponseEntity with body and NOT_FOUND status for ProductNotFoundException
+ * TODO 2: Add another @ExceptionHandler for IllegalArgumentException that returns BAD_REQUEST (400)
+ * 
  * ═══════════════════════════════════════════════════════════════════════════════
  */
 public class Exercise2 {

@@ -14,13 +14,15 @@ import org.springframework.stereotype.Service;
 
 /**
  * ═══════════════════════════════════════════════════════════════════════════════
- * EXERCISE 5: Spring Security - User Creation & Password Encryption
+ * EXERCISE 5
  * ═══════════════════════════════════════════════════════════════════════════════
  * 
  * TASK: Encrypt password before saving user
  * 
- * TODO: Use PasswordEncoder to encrypt the password, create User object and
- *       set username and encrypted password
+ * TODO 1: Encrypt the password using passwordEncoder.encode() in createUser() method
+ * TODO 2: Create a method to validate login: compare plainPassword with stored encrypted password 
+ *         using passwordEncoder.matches() in validatePassword() method
+ * TODO 3: The SecurityConfig class already has the @Bean for BCryptPasswordEncoder configured
  * 
  * ═══════════════════════════════════════════════════════════════════════════════
  */

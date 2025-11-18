@@ -9,10 +9,13 @@ import java.util.List;
 
 /**
  * ═══════════════════════════════════════════════════════════════════════════════
- * EXERCISE 3: JPA Relationships - Avoiding N+1 Problem
+ * EXERCISE 3
  * ═══════════════════════════════════════════════════════════════════════════════
  *
- * TODO: Join the class Product with Category with annotations @ManyToOne(fetch = FetchType.LAZY) and @JoinColumn(name = "***") and add @Query annotation with JPQL to obtain every product of every category
+ * TASK: Join the class Product with Category and add @Query annotation with JPQL to obtain every product of every category
+ *
+ * TODO 1: Add fetch = FetchType.LAZY and @JoinColumn(name = "name of the bonding column") to the @ManyToOne in Product class
+ * TODO 2: Add @Query annotation with JPQL: "SELECT c FROM Category c LEFT JOIN FETCH c.products" to findAllWithProducts() method
  * 
  * ═══════════════════════════════════════════════════════════════════════════════
  */

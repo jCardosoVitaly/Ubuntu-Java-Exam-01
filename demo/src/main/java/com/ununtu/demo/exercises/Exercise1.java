@@ -7,12 +7,13 @@ import org.springframework.web.servlet.HandlerInterceptor;
 
 /**
  * ═══════════════════════════════════════════════════════════════════════════════
- * EXERCISE 1: Custom Interceptors
+ * EXERCISE 1
  * ═══════════════════════════════════════════════════════════════════════════════
  * 
  * TASK: Measure how long each HTTP request takes
  * 
- * TODO: Get startTime attribute from the request and calculate duration
+ * TODO 1: Set startTime attribute to request with value System.currentTimeMillis() in preHandle()
+ * TODO 2: Get startTime attribute from request, calculate duration, and print "Request completed in Xms" in afterCompletion()
  * 
  * ═══════════════════════════════════════════════════════════════════════════════
  */

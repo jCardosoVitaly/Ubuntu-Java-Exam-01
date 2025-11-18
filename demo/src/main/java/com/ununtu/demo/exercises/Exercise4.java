@@ -12,12 +12,13 @@ import java.util.List;
 
 /**
  * ═══════════════════════════════════════════════════════════════════════════════
- * EXERCISE 4: Native Query
+ * EXERCISE 4
  * ═══════════════════════════════════════════════════════════════════════════════
  * 
  * TASK: Find products with price above a value using Native SQL
  * 
- * TODO: Create query to obtain a price higher than the imput parameter
+ * TODO 1: Replace the comment with the query in order to obtain a price higher than the input parameter (Native SQL query)
+ * TODO 2: Add parameter Double minPrice with the proper annotation (@Param)
  * 
  * ═══════════════════════════════════════════════════════════════════════════════
  */
